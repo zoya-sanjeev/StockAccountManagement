@@ -1,6 +1,6 @@
 package com.bridgelabz.stockmanagement;
 
-import java.util.*;
+import java.util.*;	
 
 public class StockPortfolio {
 
@@ -8,5 +8,9 @@ public class StockPortfolio {
 	
 	public StockPortfolio() {
 		this.listOfStocks=new ArrayList<>();
+	}	
+	
+	public void addStock(Stock stock) {
+		listOfStocks.add(stock);
 	}
 }
