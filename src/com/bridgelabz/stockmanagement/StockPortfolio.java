@@ -21,4 +21,15 @@ public class StockPortfolio {
 		}
 		return totalStocks();	
 	}
+	
+	public void stockReport() {
+		int index=1;
+		for(Stock stock: listOfStocks) {
+			System.out.println(index++);
+			System.out.println("Name of stock: "+stock.getName());
+			System.out.println("Value of stock: "+stock.valueOfStock());
+			
+		}
+		System.out.println("Value of total stock="+this.totalStocks());
+	}
 }
