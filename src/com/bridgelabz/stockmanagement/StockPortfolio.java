@@ -13,4 +13,12 @@ public class StockPortfolio {
 	public void addStock(Stock stock) {
 		listOfStocks.add(stock);
 	}
+	
+	public double totalStocks() {
+		Double totalStocks=0.0;
+		for(Stock stock: listOfStocks) {
+			totalStocks+=stock.valueOfStock();
+		}
+		return totalStocks();	
+	}
 }
